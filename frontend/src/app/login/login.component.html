@@ -1,1 +1,34 @@
-<p>login works!</p>
+
+<body>
+    <h1 style="text-align: center;margin: 50px;margin-top:10%;color: blue;font-size: 30px;">Login</h1>
+    <div style="width: 10%;">
+        <div class="line">
+            <span class="or">OR</span>
+            </div>
+    </div>
+    <br>
+<div class="form example-form">
+    <form [formGroup]="loginForm" (ngSubmit)="Onsubmit()">
+        <label class="label3">Email<span style="color:red">*</span ></label><br>
+      
+            <mat-form-field appearance="fill" class="example-full-width">
+                
+                <input matInput placeholder="Email" class="textbox" formControlName="email">
+            </mat-form-field>
+            <br>
+            <label class="label">Password<span style="color:red">*</span ></label><br>
+    
+            <mat-form-field appearance="fill" class="example-full-width">
+                
+                <input matInput class="textbox" placeholder="Password" formControlName="password" >
+            </mat-form-field>
+            <br>
+            <h4 style="color: coral;margin-left: 19%;">Forgot Password</h4>
+        <button mat-raised-button>Login</button>
+        <br>
+        <br>
+        <h4 style="color: lightblue;">Don't have an account?  <span style="color:blue;">Sign Up</span></h4>
+
+  </form>
+  </div>
+  </body>
