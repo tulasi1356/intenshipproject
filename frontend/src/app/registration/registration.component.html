@@ -1,1 +1,61 @@
-<p>registration works!</p>
+<body>
+    <h1 style="text-align: center;margin: 50px;margin-top:40px;color: blue;font-size: 30px;">Registration</h1>
+<div class="form example-form">
+    <form [formGroup]="signupForm" (ngSubmit)="Onsubmit()">
+        <label class="label">First Name<span style="color:red">*</span ></label><br>
+        <mat-form-field appearance="fill" class="example-full-width">
+            
+            <input  matInput class="textbox" placeholder="First Name" formControlName="firstname">
+        </mat-form-field>
+        <br>
+        <label class="label">Last Name<span style="color:red">*</span ></label><br>
+
+        <mat-form-field appearance="fill" class="example-full-width">
+            
+            <input matInput class="textbox" placeholder="Last Name" formControlName="lastname">
+        </mat-form-field>
+        <br>
+        <label class="label1">Mobile Number<span style="color:red">*</span ></label><br>
+
+        <mat-form-field appearance="fill" class="example-full-width">
+            
+          
+        <input matInput  class="textbox" placeholder="Mobile Number" formControlName="mobilenumber">
+        </mat-form-field>
+        <br>
+        <label class="label">Dateofbirth<span style="color:red">*</span ></label><br>
+
+        <mat-form-field appearance="fill" class="example-full-width">
+            
+            
+        <input matInput  class="textbox" placeholder="Date of birth" formControlName="dateofbirth">
+        </mat-form-field>
+        <br>
+        <label class="label3">Email<span style="color:red">*</span ></label><br>
+      
+        <mat-form-field appearance="fill" class="example-full-width">
+            
+            <input matInput placeholder="Email" class="textbox" formControlName="email">
+        </mat-form-field>
+        <br>
+        <label class="label">Password<span style="color:red">*</span ></label><br>
+
+        <mat-form-field appearance="fill" class="example-full-width">
+            
+            <input matInput class="textbox" placeholder="Password" formControlName="password" >
+        </mat-form-field>
+        <br>
+        <label class="label2">Confirm Password<span style="color:red">*</span ></label><br>
+
+        <mat-form-field appearance="fill" class="example-full-width">
+            
+            <input matInput  class="textbox" placeholder="Confirm Password" formControlName="confirmpassword">
+        </mat-form-field>
+        <br>
+               
+        <button mat-raised-button>Create Account</button>
+        <br>
+        <br>
+    </form>
+</div>
+</body>
