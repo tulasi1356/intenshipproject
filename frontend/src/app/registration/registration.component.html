@@ -23,13 +23,15 @@
         <input matInput  class="textbox" placeholder="Mobile Number" formControlName="mobilenumber">
         </mat-form-field>
         <br>
-        <label class="label">Dateofbirth<span style="color:red">*</span ></label><br>
 
-        <mat-form-field appearance="fill" class="example-full-width">
-            
-            
-        <input matInput  class="textbox" placeholder="Date of birth" formControlName="dateofbirth">
+        <label class="label">Dateofbirth<span style="color:red">*</span ></label><br>
+       <mat-form-field class="example-full-width" appearance="fill">
+       <!-- <mat-label>Choose a date</mat-label> -->
+       <input matInput [matDatepicker]="picker" placeholder="Date of birth" formControlName="dateofbirth">
+       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+       <mat-datepicker touchUi #picker></mat-datepicker>
         </mat-form-field>
+       
         <br>
         <label class="label3">Email<span style="color:red">*</span ></label><br>
       
