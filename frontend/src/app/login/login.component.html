@@ -29,7 +29,7 @@
             </mat-form-field>
             <br>
             <h4 style="color: coral;margin-left: 19%;">Forgot Password?</h4>
-        <button mat-raised-button>Login</button>
+        <button [disabled]="!loginForm.valid" mat-raised-button>Login</button>
         <br>
         <br>
         <h4 style="color: lightblue;">Don't have an account?  <span style="color:#288cec;">Sign Up</span></h4>
