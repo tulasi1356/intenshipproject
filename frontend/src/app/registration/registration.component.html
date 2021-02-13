@@ -55,7 +55,7 @@
         </mat-form-field>
         <br>
                
-        <button type="submit" mat-raised-button>Create Account</button>
+        <button type="submit" [disabled]="!signupForm.valid" mat-raised-button>Create Account</button>
         <button type="button" mat-raised-button (click)="gotologin()" style="margin-left: 10px;">Login</button>
 
         <br>
