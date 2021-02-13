@@ -6,9 +6,15 @@ import { HttpClient, HttpHeaders } from '@angular/common/http'
 })
 export class AuthService {
   private url='/auth/signup';
+private loginurl = '/auth/login';
+
   constructor(private http: HttpClient,) { }
   generalsignup(details: any) {
     // console.log('details',details);
     return this.http.post<any>(this.url,details);
+  }
+  generallogin(details:any) {
+    console.log('details',details);
+    return this.http.post<any>(this.loginurl,details);
   }
 }
