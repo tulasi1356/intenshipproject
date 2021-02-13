@@ -37,12 +37,9 @@ app.use(session(sess))
 app.use(express.static(path.join(__dirname,'dist/frontend')))
 
 
-app.use('/auth',auth);
-// app.use('/', routes);
-// app.use('/sell',sell);
+app.use('/auth',auth);;
 app.get('/*',function(req,res){
   res.sendFile(path.join(__dirname,'/dist/back/index.html'))
-  // app.use(express.static(path.join(__dirname,'auth')))
   
 })
 app.listen(PORT,'0.0.0.0', () => {
