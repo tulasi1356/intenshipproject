@@ -10,53 +10,83 @@ body {
         .faceicon {
             margin: 20px;
             margin-right: 40px;
-            border: 2px solid blue;
-            box-shadow: blue;
+            border: 3px solid#288cec;
+            box-shadow: 3px 5px #888888;
             border-radius: 5px; 
         }
         .googleicon {
             margin: 20px;
-            border: 2px solid lightblue;
-            box-shadow: blue;
+            border: 3px solid lightblue;
+            box-shadow: 3px 5px #888888;
             margin-left:40px ;
             border-radius: 5px; 
 
         }
     }
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        color: blue;
+        color:#288cec;
       }
       ::-moz-placeholder { /* Firefox 19+ */
-        color: blue
+        color:#288cec
       }
       :-ms-input-placeholder { /* IE 10+ */
-        color: blue
+        color:#288cec
       }
       :-moz-placeholder { /* Firefox 18- */
-        color: blue
+        color:#288cec
       }
-      .line {
-        background: #f1f2f6;
-        height: 3px;
-        width: 100%;
-        float: left;
-    }
-    .line span.or {
-        background: #fff;
-        color: #288cec;
-        text-align: center;
-        padding: 2px;
-        display: inline-block;
-        position: absolute;
-        left: 50%;
-        font-size: 13px;
-        font-weight: 600;
-        margin-left: -10px;
-        margin-top: -11.5px;
-    }
+      .linearea {
+          text-align: center;
+          justify-content: center;
+          display: flex;
+          .line {
+            background: #f1f2f6;
+            height: 3px;
+            width: 15%;
+          }
+          .or {
+                background: #fff;
+                color: #288cec;
+                text-align: center;
+                padding: 2px;
+                display: inline-block;
+                font-size: 13px;
+                font-weight: 600;
+                margin-left: -10px;
+                margin-top: -11.5px;
+          }
+      }
+    //   .line {
+    //       text-align: center;
+          
+    //       background: #f1f2f6;
+    //         height: 3px;
+    //         width: 90%;
+    //         // float: left;
+    //   }
+    //   .line {
+    //     background: #f1f2f6;
+    //     height: 3px;
+    //     width: 100%;
+    //     float: left;
+    //     text-align: center;
+    // }
+    // .line span.or {
+    //     background: #fff;
+    //     color: #288cec;
+    //     text-align: center;
+    //     padding: 2px;
+    //     display: inline-block;
+    //     position: absolute;
+    //     left: 50%;
+    //     font-size: 13px;
+    //     font-weight: 600;
+    //     margin-left: -10px;
+    //     margin-top: -11.5px;
+    // }
     .form{
         button {
-            background-color: blue;
+            background-color:#288cec;
             border-radius: 25px;
             color: white;
             width: 20%;
@@ -69,7 +99,7 @@ body {
             margin-left:-21%;
             font-weight: 400;
             font-size: 14px;
-            // color: blue;
+            // color:#288cec;
         }
         .label1
         {
@@ -77,7 +107,7 @@ body {
             margin-left:-19%;
             font-weight: 400;
             font-size: 14px;
-            // color: blue;
+            // color:#288cec;
         }
         .label2
         {
@@ -85,7 +115,7 @@ body {
             margin-left:-18%;
             font-weight: 400;
             font-size: 14px;
-            // color: blue;
+            // color:#288cec;
         }
         .label3
         {
@@ -93,7 +123,7 @@ body {
             margin-left:-23%;
             font-weight: 400;
             font-size: 14px;
-            // color: blue;
+            // color:#288cec;
         }
         .example-full-width
         {
