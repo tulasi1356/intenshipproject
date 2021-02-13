@@ -14,6 +14,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +24,7 @@ import {MatMenuModule} from '@angular/material/menu';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule ,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
